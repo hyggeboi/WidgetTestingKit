@@ -20,17 +20,8 @@ struct Provider: IntentTimelineProvider {
     }
 
     func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
-        var entries: [SimpleEntry] = []
-
-        // Generate a timeline consisting of five entries an hour apart, starting from the current date.
-        let currentDate = Date()
-        for hourOffset in 0 ..< 5 {
-            let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate, configuration: configuration)
-            entries.append(entry)
-        }
-
-        let timeline = Timeline(entries: entries, policy: .atEnd)
+        let entry = SimpleEntry(date: .now, configuration: configuration)
+        let timeline = Timeline(entries: [entry], policy: .never)
         completion(timeline)
     }
 }
@@ -44,7 +35,19 @@ struct WidgetExtensionEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
-        Text(entry.date, style: .time)
+        if let uiImage = uiImage {
+            Image(uiImage: uiImage)
+                .resizable()
+        } else {
+            Color.red
+        }
+    }
+    
+    var uiImage: UIImage? {
+        guard let imageName = entry.configuration.imageName,
+              let imagesFolderURL = Bundle.main.url(forResource: "Images", withExtension: nil) else { return nil }
+        let image = imagesFolderURL.appending(component: imageName)
+        return UIImage(contentsOfFile: image.path)
     }
 }
 
@@ -55,8 +58,9 @@ struct WidgetExtension: Widget {
         IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
             WidgetExtensionEntryView(entry: entry)
         }
-        .configurationDisplayName("My Widget")
-        .description("This is an example widget.")
+        .configurationDisplayName("Image testing widget")
+        .description("Choose an image for preview")
+        .supportedFamilies([.systemSmall, .systemMedium, .systemLarge])
     }
 }
 

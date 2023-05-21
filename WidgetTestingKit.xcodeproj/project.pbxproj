@@ -19,6 +19,15 @@
 		F54AB2442A1AC04700BFF560 /* WidgetExtension.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = F54AB2402A1AC04500BFF560 /* WidgetExtension.intentdefinition */; };
 		F54AB2452A1AC04700BFF560 /* WidgetExtension.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = F54AB2402A1AC04500BFF560 /* WidgetExtension.intentdefinition */; };
 		F54AB2482A1AC04700BFF560 /* WidgetExtensionExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F54AB2352A1AC04500BFF560 /* WidgetExtensionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F54AB2772A1AC6BA00BFF560 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F54AB2762A1AC6BA00BFF560 /* Intents.framework */; };
+		F54AB27A2A1AC6BA00BFF560 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54AB2792A1AC6BA00BFF560 /* IntentHandler.swift */; };
+		F54AB27E2A1AC6BA00BFF560 /* IntentExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F54AB2752A1AC6BA00BFF560 /* IntentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F54AB2822A1AC71100BFF560 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54AB2792A1AC6BA00BFF560 /* IntentHandler.swift */; };
+		F54AB2832A1AC71C00BFF560 /* WidgetExtension.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = F54AB2402A1AC04500BFF560 /* WidgetExtension.intentdefinition */; };
+		F54AB2842A1AC83800BFF560 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54AB2792A1AC6BA00BFF560 /* IntentHandler.swift */; };
+		F54AB2D02A1AD07900BFF560 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = F54AB2CF2A1AD07900BFF560 /* Images */; };
+		F54AB2D12A1AD07900BFF560 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = F54AB2CF2A1AD07900BFF560 /* Images */; };
+		F54AB2D22A1AD07900BFF560 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = F54AB2CF2A1AD07900BFF560 /* Images */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +38,13 @@
 			remoteGlobalIDString = F54AB2342A1AC04500BFF560;
 			remoteInfo = WidgetExtensionExtension;
 		};
+		F54AB27C2A1AC6BA00BFF560 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F54AB2182A1ABF9E00BFF560 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F54AB2742A1AC6BA00BFF560;
+			remoteInfo = IntentExtension;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,6 +54,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				F54AB27E2A1AC6BA00BFF560 /* IntentExtension.appex in Embed Foundation Extensions */,
 				F54AB2482A1AC04700BFF560 /* WidgetExtensionExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
@@ -59,6 +76,14 @@
 		F54AB2402A1AC04500BFF560 /* WidgetExtension.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = WidgetExtension.intentdefinition; sourceTree = "<group>"; };
 		F54AB2412A1AC04700BFF560 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F54AB2432A1AC04700BFF560 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F54AB2752A1AC6BA00BFF560 /* IntentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IntentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F54AB2762A1AC6BA00BFF560 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		F54AB2792A1AC6BA00BFF560 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		F54AB27B2A1AC6BA00BFF560 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F54AB2852A1ACC6A00BFF560 /* WidgetTestingKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WidgetTestingKit.entitlements; sourceTree = "<group>"; };
+		F54AB2862A1ACC8D00BFF560 /* WidgetExtensionExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WidgetExtensionExtension.entitlements; sourceTree = "<group>"; };
+		F54AB2CF2A1AD07900BFF560 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
+		F54AB2D32A1AD4A400BFF560 /* IntentExtension.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = IntentExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,14 +103,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F54AB2722A1AC6BA00BFF560 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F54AB2772A1AC6BA00BFF560 /* Intents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		F54AB2172A1ABF9E00BFF560 = {
 			isa = PBXGroup;
 			children = (
+				F54AB2862A1ACC8D00BFF560 /* WidgetExtensionExtension.entitlements */,
 				F54AB2222A1ABF9E00BFF560 /* WidgetTestingKit */,
 				F54AB23B2A1AC04500BFF560 /* WidgetExtension */,
+				F54AB2782A1AC6BA00BFF560 /* IntentExtension */,
 				F54AB2362A1AC04500BFF560 /* Frameworks */,
 				F54AB2212A1ABF9E00BFF560 /* Products */,
 			);
@@ -96,6 +131,7 @@
 			children = (
 				F54AB2202A1ABF9E00BFF560 /* WidgetTestingKit.app */,
 				F54AB2352A1AC04500BFF560 /* WidgetExtensionExtension.appex */,
+				F54AB2752A1AC6BA00BFF560 /* IntentExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,9 +139,11 @@
 		F54AB2222A1ABF9E00BFF560 /* WidgetTestingKit */ = {
 			isa = PBXGroup;
 			children = (
+				F54AB2852A1ACC6A00BFF560 /* WidgetTestingKit.entitlements */,
 				F54AB2232A1ABF9E00BFF560 /* WidgetTestingKitApp.swift */,
 				F54AB2252A1ABF9E00BFF560 /* ContentView.swift */,
 				F54AB2272A1ABF9F00BFF560 /* Assets.xcassets */,
+				F54AB2CF2A1AD07900BFF560 /* Images */,
 				F54AB2292A1ABF9F00BFF560 /* Preview Content */,
 			);
 			path = WidgetTestingKit;
@@ -124,6 +162,7 @@
 			children = (
 				F54AB2372A1AC04500BFF560 /* WidgetKit.framework */,
 				F54AB2392A1AC04500BFF560 /* SwiftUI.framework */,
+				F54AB2762A1AC6BA00BFF560 /* Intents.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -138,6 +177,16 @@
 				F54AB2432A1AC04700BFF560 /* Info.plist */,
 			);
 			path = WidgetExtension;
+			sourceTree = "<group>";
+		};
+		F54AB2782A1AC6BA00BFF560 /* IntentExtension */ = {
+			isa = PBXGroup;
+			children = (
+				F54AB2D32A1AD4A400BFF560 /* IntentExtension.entitlements */,
+				F54AB2792A1AC6BA00BFF560 /* IntentHandler.swift */,
+				F54AB27B2A1AC6BA00BFF560 /* Info.plist */,
+			);
+			path = IntentExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +205,7 @@
 			);
 			dependencies = (
 				F54AB2472A1AC04700BFF560 /* PBXTargetDependency */,
+				F54AB27D2A1AC6BA00BFF560 /* PBXTargetDependency */,
 			);
 			name = WidgetTestingKit;
 			productName = WidgetTestingKit;
@@ -179,6 +229,23 @@
 			productReference = F54AB2352A1AC04500BFF560 /* WidgetExtensionExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		F54AB2742A1AC6BA00BFF560 /* IntentExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F54AB27F2A1AC6BA00BFF560 /* Build configuration list for PBXNativeTarget "IntentExtension" */;
+			buildPhases = (
+				F54AB2712A1AC6BA00BFF560 /* Sources */,
+				F54AB2722A1AC6BA00BFF560 /* Frameworks */,
+				F54AB2732A1AC6BA00BFF560 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IntentExtension;
+			productName = IntentExtension;
+			productReference = F54AB2752A1AC6BA00BFF560 /* IntentExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -193,6 +260,9 @@
 						CreatedOnToolsVersion = 14.2;
 					};
 					F54AB2342A1AC04500BFF560 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					F54AB2742A1AC6BA00BFF560 = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
@@ -212,6 +282,7 @@
 			targets = (
 				F54AB21F2A1ABF9E00BFF560 /* WidgetTestingKit */,
 				F54AB2342A1AC04500BFF560 /* WidgetExtensionExtension */,
+				F54AB2742A1AC6BA00BFF560 /* IntentExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -222,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F54AB22B2A1ABF9F00BFF560 /* Preview Assets.xcassets in Resources */,
+				F54AB2D02A1AD07900BFF560 /* Images in Resources */,
 				F54AB2282A1ABF9F00BFF560 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -230,7 +302,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F54AB2D12A1AD07900BFF560 /* Images in Resources */,
 				F54AB2422A1AC04700BFF560 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F54AB2732A1AC6BA00BFF560 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F54AB2D22A1AD07900BFF560 /* Images in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +324,7 @@
 			files = (
 				F54AB2262A1ABF9E00BFF560 /* ContentView.swift in Sources */,
 				F54AB2242A1ABF9E00BFF560 /* WidgetTestingKitApp.swift in Sources */,
+				F54AB2842A1AC83800BFF560 /* IntentHandler.swift in Sources */,
 				F54AB2452A1AC04700BFF560 /* WidgetExtension.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,7 +335,17 @@
 			files = (
 				F54AB23D2A1AC04500BFF560 /* WidgetExtensionBundle.swift in Sources */,
 				F54AB23F2A1AC04500BFF560 /* WidgetExtension.swift in Sources */,
+				F54AB2822A1AC71100BFF560 /* IntentHandler.swift in Sources */,
 				F54AB2442A1AC04700BFF560 /* WidgetExtension.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F54AB2712A1AC6BA00BFF560 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F54AB2832A1AC71C00BFF560 /* WidgetExtension.intentdefinition in Sources */,
+				F54AB27A2A1AC6BA00BFF560 /* IntentHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +356,11 @@
 			isa = PBXTargetDependency;
 			target = F54AB2342A1AC04500BFF560 /* WidgetExtensionExtension */;
 			targetProxy = F54AB2462A1AC04700BFF560 /* PBXContainerItemProxy */;
+		};
+		F54AB27D2A1AC6BA00BFF560 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F54AB2742A1AC6BA00BFF560 /* IntentExtension */;
+			targetProxy = F54AB27C2A1AC6BA00BFF560 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -388,6 +485,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WidgetTestingKit/WidgetTestingKit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WidgetTestingKit/Preview Content\"";
@@ -418,6 +516,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WidgetTestingKit/WidgetTestingKit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WidgetTestingKit/Preview Content\"";
@@ -447,6 +546,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = WidgetExtensionExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NU9LYD59KJ;
@@ -474,6 +574,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = WidgetExtensionExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NU9LYD59KJ;
@@ -488,6 +589,58 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vladparamonov.WidgetTestingKit.WidgetExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F54AB2802A1AC6BA00BFF560 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = IntentExtension/IntentExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NU9LYD59KJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IntentExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = IntentExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vladparamonov.WidgetTestingKit.IntentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F54AB2812A1AC6BA00BFF560 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = IntentExtension/IntentExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NU9LYD59KJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IntentExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = IntentExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vladparamonov.WidgetTestingKit.IntentExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -522,6 +675,15 @@
 			buildConfigurations = (
 				F54AB24A2A1AC04700BFF560 /* Debug */,
 				F54AB24B2A1AC04700BFF560 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F54AB27F2A1AC6BA00BFF560 /* Build configuration list for PBXNativeTarget "IntentExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F54AB2802A1AC6BA00BFF560 /* Debug */,
+				F54AB2812A1AC6BA00BFF560 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
